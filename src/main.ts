@@ -30,9 +30,10 @@ function renderCards(games: Game[]): void {
 
 function updateCounter(_count: number): void {
   const el = document.querySelector<HTMLSpanElement>('#count')!
+
   // TODO: mostrar el número de juegos en el elemento #count.
   // Asigná el valor a el.textContent como string.
-  el.textContent = ''
+  el.textContent = String(el)
 }
 
 function getGenres(): string[] {
